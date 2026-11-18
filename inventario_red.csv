@@ -1,0 +1,20 @@
+Categoría,Hostname,IP,MAC,Estado / Puerto,ID (UUID)
+Infraestructura,RB,198.51.100.1,00D0.D38E.C682,Reachable (Managed),FDO1302S9RC-uuid
+Infraestructura,ED1,10.70.99.1,00D0.BC4E.3613,Reachable (Managed),CAT1010FID4-uuid
+Infraestructura,ISP,192.0.2.1,0040.0BE5.1A27,Unreachable (Wrong credential),FDO1302P2R8-uuid
+Infraestructura,SUC1,10.70.90.1,00D0.D3E4.20BB,Reachable (Managed),FDO1302YMU3-uuid
+Infraestructura,R-A,10.70.98.1,00E0.B077.2518,Reachable (Managed),FDO130284HE-uuid
+Infraestructura,ED2,10.70.60.1,0001.C9AD.15A9,Reachable (Managed),CAT101067MI-uuid
+Infraestructura,R-B,10.70.80.1,0005.5E35.2150,Reachable (Managed),FDO1302N2W1-uuid
+Infraestructura,SW2,10.70.99.11,0005.5E66.1764,Reachable (Managed),CAT1010L96N-uuid
+Infraestructura,SW1,10.70.98.2,0001.C77E.B389,Reachable (Managed),CAT1010A1WS-uuid
+Host Final,PC-Admin,10.70.99.3,000A.F353.20B7,Conectado a FastEthernet0/5,PTT081012K4uuid
+Host Final,DNS,10.70.40.11,0001.974A.8ED3,Conectado a FastEthernet0/1,PTT0810OR1Zuuid
+Host Final,NTP,10.70.40.13,0060.5C0E.8D87,Conectado a FastEthernet0/2,PTT08101B5Kuuid
+Host Final,FTP,10.70.40.12,0001.63E5.3A85,Conectado a FastEthernet0/3,PTT0810W90Yuuid
+Host Final,PC2,10.70.10.11,0000.0CD2.19D5,Conectado a GigabitEthernet1/0/2,PTT0810Y9H5uuid
+Host Final,PC0,10.70.60.2,0002.4A88.652B,Conectado a GigabitEthernet1/0/4,PTT081096G5uuid
+Host Final,HTTP,192.0.2.10,0090.2192.3831,Conectado a GigabitEthernet0/0/1,PTT08103UEZuuid
+Host Final,L0,10.70.80.2,00E0.A373.09C4,Conectado a GigabitEthernet0/0/1,PTT0810B54Buuid
+Host Final,PC1,10.70.30.11,000B.BE11.A614,Conectado a FastEthernet0/1,PTT0810A9SUuuid
+Host Final,L1,10.70.90.2,0002.1766.E8CA,Conectado a GigabitEthernet0/0/1,PTT0810ER5Ruuid

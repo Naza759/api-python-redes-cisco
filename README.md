@@ -43,3 +43,11 @@ Simplemente escribimos en la línea de comandos: **deactivate**
 
 - **Credenciales del controlador:** los scripts usan el usuario `cisco` y la clave `cisco123!`. Si en tu Network Controller creaste otro usuario, cambialos en `01_get-ticket.py` y en `04_tabulate.py`.
 - **Ticket (X-Auth-Token):** `02_get-network-device.py` y `03_get-host.py` traen escrito un ticket de ejemplo que **no va a funcionar** en tu Packet Tracer, porque el controlador genera uno nuevo en cada sesión y vence. Ejecutá primero `01_get-ticket.py`, copiá el ticket que muestra y reemplazalo en el header `X-Auth-Token` de esos dos scripts. `04_tabulate.py` no necesita este paso: pide el ticket solo.
+
+## Script Propio: Inventario Consolidado (`src/05_inventario_completo.py`)
+
+Script desarrollado para unificar la información de infraestructura y dispositivos finales en una única vista:
+- **Autenticación automática:** Solicita el `serviceTicket` mediante `POST /api/v1/ticket`.
+- **Consulta unificada:** Obtiene y combina los datos de `/network-device` y `/host` (IP de gestión, MAC, estado de alcanzabilidad/puerto conectado y UUID).
+- **Métricas y exportación:** Muestra una tabla formateada con `tabulate`, calcula el resumen de equipos alcanzables (`Reachable`) y exporta el reporte completo a `inventario_red.csv`.
+- **Gestión de inventario:** Permite eliminar un dispositivo de red por su UUID mediante `DELETE /api/v1/network-device/{id}`.
